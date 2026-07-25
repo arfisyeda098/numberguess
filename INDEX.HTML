@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="gameBox" class="container">
+        <div class="emoji">🎯</div>
+        <h1>Guess the Number</h1>
+        <p class="subtitle">1 - 10</p>
+        
+        <div class="attempts-box">
+            <span id="attemptsLeft">5</span>
+            <p>Attempts Left</p>
+        </div>
+
+        <input type="number" id="userInput" min="1" max="10" placeholder="Enter a number">
+        <button id="guessBtn">Guess!</button>
+        
+        <div id="message"></div>
+        <button id="restartBtn2" class="restart hidden">Play Again</button>
+    </div>
+    <audio id="winSound" src="https://www.soundjay.com/human/sounds/applause-8.mp3"></audio>
+<audio id="loseSound" src="https://www.soundjay.com/misc/sounds/fail-buzzer-02.mp3"></audio>
+
+    <!-- JS Link -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>
